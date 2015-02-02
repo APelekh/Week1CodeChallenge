@@ -15,7 +15,6 @@ namespace Week1CodeChallenge
         {
             StringAssert.AreEqualIgnoringCase("1", Program.FizzBuzz(1));
         }
-        [Ignore]
         [Test, Timeout(500)]
         public void testFizzBuzzNegative()
         {
@@ -46,7 +45,6 @@ namespace Week1CodeChallenge
         {
             StringAssert.AreEqualIgnoringCase("full pot coffee the keep", Program.Yodaizer("Keep the coffee pot full"));
         }
-        [Ignore]
         [Test, Timeout(500)]
         public void testYodaizerBonus()
         {
