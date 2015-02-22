@@ -217,23 +217,31 @@ namespace Week1CodeChallenge
         /// <returns>Returns whether number is prime or not</returns>
         public static bool IsPrime(int number)
         {
-            //creating a checker for processed number
-            bool checker = true;
-            //looping through numbers and testing the input number
-            for (int i = 2, j = 0; i * i <= number && j != 1;)
+            for (int i = 2; i < number; i++)
             {
                 if (number % i == 0)
                 {
-                    j = 1;
-                    checker = false;
-                }
-                else
-                {
-                    i++;
+                    return false;
                 }
             }
-            return checker;
-                
+            return true;
+
+            ////creating a checker for processed number
+            //bool checker = true;
+            ////looping through numbers and testing the input number
+            //for (int i = 2, j = 0; i * i <= number && j != 1;)
+            //{
+            //    if (number % i == 0)
+            //    {
+            //        j = 1;
+            //        checker = false;
+            //    }
+            //    else
+            //    {
+            //        i++;
+            //    }
+            //}
+            //return checker;
         }
 
         /// <summary>
